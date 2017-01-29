@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ItsLife</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_objective">NewObjective</string>
+    <string name="not_me">Not me?</string>
+    <string name="completed">Completed?</string>
+    <string name="in_label">In Label :</string>
+    <string name="trivial">trivial</string>
+    <string name="Revise">Revise</string>
+    <string name="revise">Revise</string>
+    <string name="importance">Importance :</string>
+    <string name="tasksPerDay">TasksPerDay</string>
+    <string name="fulfilled">Fulfilled</string>
+    <string name="save">SAVE</string>
+</resources>

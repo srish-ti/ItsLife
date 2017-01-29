@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_today"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lohan.itslife.Today">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/today_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <Button
+            android:id="@+id/today_date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_alignParentTop="true"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+        <EditText
+            android:id="@+id/today_note_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note"
+            android:layout_below="@id/today_date_button"
+            />
+        <com.tokenautocomplete.TokenCompleteTextView
+            android:layout_below="@+id/today_note_editText"
+            android:id="@+id/today_tasks_chipView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/today_fulfilled_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/today_tasks_chipView">
+            <TextView
+                android:id="@+id/today_fulfilled_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fulfilled"/>
+
+            <Spinner
+                android:id="@+id/today_fulfilled_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
